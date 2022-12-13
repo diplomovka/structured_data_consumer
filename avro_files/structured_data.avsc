@@ -1,0 +1,12 @@
+{
+    "namespace": "example.unstructured.schema",
+	"name": "structured_data",
+    "type": "record",
+    "fields": [
+        {"name": "data_hash", "type": "string", "default": "NONE"},
+        {"name": "table_name", "type": "string"},
+        {"name": "insert_query", "type": "string", "default": "NONE"},
+        {"name": "columns_names", "type": {"type": "array", "items": "string"}},
+        {"name": "table_creation_queries", "type": {"type": "array", "items": "string"}}
+	]
+}
